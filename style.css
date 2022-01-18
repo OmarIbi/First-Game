@@ -1,0 +1,65 @@
+body
+{
+    background-color: rgb(47, 13, 51);
+    
+
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game{
+    height: 300px;
+    width: 600px;
+    border: 1px solid black;
+    background-color :lightgray;
+    position: relative;
+   top :150px;
+   left: 300px;
+
+}
+
+#hero{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    position: relative;
+    top: 280px;
+    left : 20px;
+    border-radius: 50%;
+    
+   
+}
+.anime{
+    animation: jump 400ms ;
+}
+
+   
+
+#block{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    position :relative;
+    left: 585px;
+    top: 265px;
+    
+    animation: star 1.6s infinite;
+}
+    
+  
+
+
+
+@keyframes star {
+    0%{left : 585px;}
+    100% {left : -2px;}
+}
+@keyframes jump {
+    0%{top : 280px;}
+    30% {top : 240px;}
+    70% {top : 245px;}
+    90%{top: 250px;}
+    100%{top: 255px;}
+}
