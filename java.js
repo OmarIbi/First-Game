@@ -32,8 +32,8 @@ var checkdead = setInterval(function(){
 },10 );
 
 document.addEventListener("keypress",resetGame);
-function resetGame(){
-    if(keyCode == 32){
+function resetGame(e){
+    if(e.keyCode == 32){
         location.reload(); } 
 }
 
